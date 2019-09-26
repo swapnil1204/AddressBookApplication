@@ -7,13 +7,15 @@ public class AddressBook {
     List<Person> people;
 
     public AddressBook() {
+        people = new ArrayList<>();
     }
 
     public void add(Person person) {
+        people.add(person);
     }
 
     public List<Person> get() {
-        return new ArrayList<>();
+        return people;
     }
 
 }
