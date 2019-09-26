@@ -9,4 +9,5 @@ public class AddressBookTest {
         AddressBook addressBook = new AddressBook();
         Assertions.assertEquals(0, addressBook.get().size());
     }
+
 }
