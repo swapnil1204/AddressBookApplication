@@ -3,11 +3,13 @@ package com.thoughtworks.address;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class AddressBookTest {
     @Test
     public void givenNoPerson_WhenRetrieve_ThenShouldReturnEmptyList() {
         AddressBook addressBook = new AddressBook();
-        Assertions.assertEquals(0, addressBook.get().size());
+        assertEquals(0, addressBook.get().size());
     }
     @Test
     public void givenOnePerson_WhenRetrieve_ThenShouldReturnEmptyList() {
@@ -17,7 +19,7 @@ public class AddressBookTest {
         AddressBook addressBook = new AddressBook();
         addressBook.add(person);
 
-        Assertions.assertEquals(1, addressBook.get().size());
+        assertEquals(1, addressBook.get().size());
     }
 
     @Test
@@ -31,6 +33,6 @@ public class AddressBookTest {
         addressBook.add(Raj);
         addressBook.add(Apurva);
 
-        Assertions.assertEquals(2, addressBook.get().size());
+        assertEquals(2, addressBook.get().size());
     }
 }
