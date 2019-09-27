@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class AddressBookTest {
     @Test
-    public void givenNoPerson_WhenRetrieve_ThenShouldReturnEmptyList() {
+    public void givenNoPerson_WhenRetrieve_ThenShouldNotReturnAnyPerson() {
         AddressBook addressBook = new AddressBook();
         assertEquals(0, addressBook.get().size());
     }
     @Test
-    public void givenOnePerson_WhenRetrieve_ThenShouldReturnEmptyList() {
+    public void givenOnePerson_WhenRetrieve_ThenShouldReturnOnePerson() {
         Address address = new Address("HSR layout","Bengluru","India","445001");
         Person person = new Person("Swapnil","Bamb","8976542345",address);
 
@@ -23,7 +23,7 @@ public class AddressBookTest {
     }
 
     @Test
-    public void givenTwoPerson_WhenRetrieve_ThenShouldReturnListWithTwoPerson() {
+    public void givenTwoPerson_WhenRetrieve_ThenShouldReturnTwoPerson() {
         Address rajAddress = new Address("HSR layout","Bengluru","India","445001");
         Person Raj = new Person("Raj","Bamb","8976542345",rajAddress);
         Address apurvaAddress = new Address("HSR layout","Bengluru","India","445001");
@@ -35,4 +35,5 @@ public class AddressBookTest {
 
         assertEquals(2, addressBook.get().size());
     }
+
 }
