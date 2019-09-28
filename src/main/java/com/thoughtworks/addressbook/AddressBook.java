@@ -1,4 +1,7 @@
-package com.thoughtworks.address;
+package com.thoughtworks.addressbook;
+
+import com.thoughtworks.addressbook.person.Address;
+import com.thoughtworks.addressbook.person.Person;
 
 import java.util.ArrayList;
 import java.util.List;

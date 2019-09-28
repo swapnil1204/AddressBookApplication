@@ -1,4 +1,4 @@
-package com.thoughtworks.address;
+package com.thoughtworks.addressbook.person;
 
 public class Person {
     private String firstName;

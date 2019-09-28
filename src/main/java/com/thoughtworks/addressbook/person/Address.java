@@ -1,4 +1,4 @@
-package com.thoughtworks.address;
+package com.thoughtworks.addressbook.person;
 
 public class Address {
     public String street;
